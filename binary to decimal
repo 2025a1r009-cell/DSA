@@ -1,0 +1,15 @@
+#include <string.h>
+int main(){
+    int n,sum = 0, base = 1;
+    printf("Enter the number :");
+    scanf("%d",&n);
+    int n1=n;
+    while (n != 0){
+        int rem = n %  10;
+        sum +=  rem * base;
+        base += base;
+        n /= 10;
+    }
+    printf("Binary number of %d :  %d ", n1,sum);
+    return 0;
+}
