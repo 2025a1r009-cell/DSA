@@ -1,0 +1,30 @@
+// PROGRAM TO CONVERT OCTAL NUMBER INTO BINARY NUMBER
+#include<stdio.h>
+int convertoctaltodecimal(int octalNum){
+    int base = 1, decNum = 0;
+    while(octalNum != 0){
+        int rem = octalNum % 10;
+        decNum +=  rem * base;
+        octalNum /= 8;
+        base *= 10;
+    }
+    return octal;
+}
+int convertdecimalyobinary(int decNum){
+    int bin = 0,base = 1;
+    while(decNum != 0){
+        int rem = decNum % 2;
+        dec += rem * place;
+        place *= 10;
+        decNum /= 2;
+    }
+    return bin;
+}
+int main(){
+    int num;
+    printf("Enter octal number : ");
+    scanf("%d",&num);
+    int binary = convertdecimaltobinary(convertoctaltodecimal(num));
+    printf("Binary of octal number %d : %d ", num , binary);
+    return 0;
+}
