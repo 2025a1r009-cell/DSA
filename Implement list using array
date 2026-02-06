@@ -8,55 +8,55 @@ void insertInBeg (int value){
     if(size>MAX){
     printf("List is Full !!!!");
     return;
-    }
-    int i;
-    for(i=size;i>0;i--){
-        list[i]=list[i-1];
-    }
-    list[i]=value;
-    size++;
-    printf("Element Inserted In Begining !!!!!\n");
+}
+int i;
+for(i=size;i>0;i--){
+    list[i]=list[i-1];
+}
+list[i]=value;
+size++;
+printf("Element Inserted In Begining !!!!!\n");
 }
 int main (){
-while(1){
-    printf("1.Insert In Begining\n");
-    printf("2.Insert AtEnd\n");
-    printf("3. Insert At Specified Position\n")
-    printf("4. Delete From Begining\n");
-    printf("5. Delete From End\n");
-    printf("6. Delete From Specied Position\n");
-    printf("7. Display List\n");
-    printf("8. Search Element In List\n");
-    printf("9. Update List Element\n");
-    printf("10.Sort Element of list\n");
-    printf("11.Exit\n"); 
-    int choice;
-    printf("Enter Choice: ");
-    scanf("%d", &choice);
-    switch(choice){
-        case 1:
-        break;
-        case 2:
-        break;
-        case 3:
-        break;
-        case 4:
-        break;
-        case 5:
-        break;
-        case 6:
-        break;
-        case 7:
-        break;
-        case 8:
-        break;
-        case 9:
-        break;
-        case 10:
-        break;
-        default:
-        printf("Invalid Choice!\n");
+    while(1){
+        printf("1.Insert In Begining\n");
+        printf("2.Insert AtEnd\n");
+        printf("3. Insert At Specified Position\n");
+        printf("4. Delete From Begining\n");
+        printf("5. Delete From End\n");
+        printf("6. Delete From Specied Position\n");
+        printf("7. Display List\n");
+        printf("8. Search Element In List\n");
+        printf("9. Update List Element\n");
+        printf("10.Sort Element of list\n");
+        printf("11.Exit\n");
+        int choice;
+        printf("Enter Choice: ");
+        scanf("%d", &choice);
+        switch(choice){
+            case 1:
+            break;
+            case 2:
+            break;
+            case 3:
+            break;
+            case 4:
+            break;
+            case 5:
+            break;
+            case 6:
+            break;
+            case 7:
+            break;
+            case 8:
+            break;
+            case 9:
+            break;
+            case 10:
+            break;
+            default:
+            printf("Invalid Choice!\n");
+        }
     }
-}
     return 0;
 }
