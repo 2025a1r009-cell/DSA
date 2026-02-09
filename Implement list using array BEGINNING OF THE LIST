@@ -1,0 +1,74 @@
+// Implement list using array
+
+#define MAX 100
+int list[MAX];
+int size = 0;
+void insertInBeg (int value){
+    if(size == MAX){
+        printf("List is Full !!!!\n");
+    return;
+}
+for( int i = size-1 ; i >= 0 ; i-- ){
+    list[i+1] = list[i];
+}
+list[0] = value ;
+size++;
+printf("Element Inserted In Begining !!!!!\n");
+}
+void displaylist(){
+    if(size == 0){
+        printf("List is empty !!!\n");
+        return ;
+    }
+    for(int i=0;i<size;i++){
+        printf("%d\t", list[i]);
+    }
+    printf("\n");
+}
+int main (){
+    while(1){
+        printf("1.Insert In Begining\n");
+        printf("2.Insert AtEnd\n");
+        printf("3. Insert At Specified Position\n");
+        printf("4. Delete From Begining\n");
+        printf("5. Delete From End\n");
+        printf("6. Delete From Specied Position\n");
+        printf("7. Display List\n");
+        printf("8. Search Element In List\n");
+        printf("9. Update List Element\n");
+        printf("10.Sort Element of list\n");
+        printf("11.Exit\n");
+        int choice,data;
+        printf("Enter Choice: ");
+        scanf("%d", &choice);
+        switch(choice){
+            case 1:
+            printf("Enter data: ");
+            scanf("%d", &data);
+            insertInBeg(data);
+            break;
+            case 2:
+            break;
+            case 3:
+            break;
+            case 4:
+            break;
+            case 5:
+            break;
+            case 6:
+            break;
+            case 7:
+            displaylist();
+            break;
+            case 8:
+            break;
+            case 9:
+            break;
+            case 10:
+            break;
+            default:
+            printf("Invalid Choice!\n");
+        }
+    }
+    return 0;
+}
