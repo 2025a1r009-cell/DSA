@@ -72,6 +72,7 @@ char* convertInfixtoPrefix(char* infixexp){
     while(top != -1){
         prefix[x++] = operator[top--];
         prefix[x] = '\0';
+        strrev(prefix);
         return prefix;
     }
 }   
