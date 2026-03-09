@@ -1,0 +1,61 @@
+// Implement list using array
+#include<stdio.h>
+#define MAX 100
+struct Node{
+    int data;
+    struct Node* next;
+};
+struct Node *head = NULL;
+struct Node* createnode(int data){
+    struct Node* temp = (struct Node*)malloc(sizeof(struct Node));
+    temp-> next = data;
+    temp-> next = NULL;
+    return temp;
+}
+void insertinbeg(int data){
+    struct Node* newnode = createNode(data);
+    newnode-> next = head;
+}
+int main (){
+    while(1){
+        printf("**** Slingly Linked List Menu ****");
+        printf("1.Insert In Begining\n");
+        printf("2.Insert At End\n");
+        printf("3. Insert At Any Position\n");
+        printf("4. Delete From Begining\n");
+        printf("5. Delete From End\n");
+        printf("6. Delete From Given Position\n");
+        printf("7. Display List\n");
+        printf("8. Search Element In List\n");
+        printf("9. Exit\n");
+        int choice,data;
+        printf("Enter Choice: ");
+        scanf("%d", &choice);
+        switch(choice){
+            case 1:
+            break;
+            case 2:
+            break;
+            case 3:
+            break;
+            case 4:
+            break;
+            case 5:
+            break;
+            case 6:
+            break;
+            case 7:
+            displaylist();
+            break;
+            case 8:
+            break;
+            case 9:
+            break;
+            case 10:
+            break;
+            default:
+            printf("Invalid Choice!\n");
+        }
+    }
+    return 0;
+}
